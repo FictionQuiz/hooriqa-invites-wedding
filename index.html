@@ -18,6 +18,33 @@ main{overflow:hidden}.hero{min-height:88vh;display:grid;grid-template-columns:1f
 section.content{padding:100px 24px;position:relative}.section-inner{max-width:1040px;margin:auto;text-align:center}.section-inner h2{font:400 clamp(2.8rem,6vw,4.7rem) 'Cormorant Garamond';color:var(--plum);margin:15px 0}.section-inner p{line-height:2;color:var(--muted);max-width:690px;margin:18px auto}.soft{background:linear-gradient(135deg,#f1eaf3,#fbf7f2)}.couple-grid,.event-grid,.detail-grid,.gallery-grid{display:grid;gap:22px;grid-template-columns:repeat(2,1fr);margin-top:40px}.person,.event,.detail{background:#fffdf9;border:1px solid var(--line);padding:30px;box-shadow:0 12px 35px #78617c0c}.person img{width:100%;height:360px;object-fit:cover;margin-bottom:22px}.person h3{font:400 2.5rem 'Cormorant Garamond';color:var(--plum);margin:4px}.person p{font-size:.85rem}.detail-grid{grid-template-columns:repeat(3,1fr)}.detail strong{display:block;font:500 1.5rem 'Cormorant Garamond';color:var(--plum);margin:12px}.countdown{display:flex;justify-content:center;gap:clamp(12px,4vw,40px);margin:35px auto}.countdown div{min-width:65px}.countdown b{display:block;font:500 clamp(2rem,5vw,3.4rem) 'Cormorant Garamond';color:var(--plum)}.countdown span{font-size:.62rem;letter-spacing:.16em;color:var(--gold);text-transform:uppercase}.event-grid{grid-template-columns:repeat(4,1fr)}.event{padding:25px 16px}.event .day{font:500 2rem 'Cormorant Garamond';color:var(--gold)}.event h3{font:500 1.5rem 'Cormorant Garamond';color:var(--plum);margin:8px}.event p{font-size:.75rem}.venue-card{background:linear-gradient(135deg,#e8ddec,#f7f0f3);padding:45px 25px;border:1px solid #cbb9d3;margin-top:35px}.venue-card h3{font:500 2rem 'Cormorant Garamond';color:var(--plum)}.gallery-grid{grid-template-columns:repeat(3,1fr)}.gallery-grid img{width:100%;height:300px;object-fit:cover;cursor:pointer;transition:transform .4s,filter .4s}.gallery-grid img:hover{transform:scale(1.025);filter:brightness(.9)}.rsvp-form{max-width:620px;margin:35px auto 0;text-align:left;background:#fffdf9;padding:32px;border:1px solid var(--line);box-shadow:0 15px 45px #78617c12}.rsvp-form label{display:block;font-size:.72rem;color:var(--plum);margin:14px 0 7px}.rsvp-form input,.rsvp-form select,.rsvp-form textarea{width:100%;padding:13px;border:1px solid var(--line);background:#fff;color:var(--ink);outline-color:var(--lilac)}.rsvp-form textarea{min-height:95px}.rsvp-form button{width:100%;margin-top:20px}.wishes{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}.wish{padding:22px;background:#fffdf9;border:1px solid var(--line);font:italic 1.1rem 'Cormorant Garamond';color:var(--plum)}footer{text-align:center;padding:65px 20px;background:#eee6f2;color:var(--plum)}footer .logo{font-size:2rem}.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.reveal.visible{opacity:1;transform:none}.lightbox{position:fixed;inset:0;background:#211927ed;z-index:40;display:none;place-items:center;padding:25px}.lightbox.show{display:grid}.lightbox img{max-width:min(900px,95vw);max-height:85vh;object-fit:contain}.lightbox button{position:absolute;right:25px;top:20px;background:none;border:0;color:white;font-size:2rem}
 @keyframes float{0%,100%{transform:rotate(-45deg) translateY(0)}50%{transform:rotate(-45deg) translateY(-13px)}}@media(max-width:800px){.hero{grid-template-columns:1fr;padding:55px 22px;gap:55px}.hero-photo{height:460px;max-height:none;width:min(420px,90%);margin:auto}.navlinks{display:none;position:absolute;top:62px;left:0;right:0;background:var(--ivory);padding:22px;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.show{display:flex}.menu-btn{display:block}.event-grid{grid-template-columns:repeat(2,1fr)}.detail-grid{grid-template-columns:1fr}.couple-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid img{height:220px}.wishes{grid-template-columns:1fr}.hero h1{font-size:5rem}}@media(max-width:420px){.heart{transform:rotate(-45deg) scale(.82)}.hero h1{font-size:4.2rem}.scratch-card{min-height:365px}.gallery-grid img{height:170px}.rsvp-form{padding:22px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Premium interaction refinements */
+#scratchScreen{background:radial-gradient(ellipse at 50% 40%,#fffdfb 0,#f2eaf3 48%,#d8c9df 100%)}
+.scratch-card{border-radius:3px;box-shadow:0 28px 85px #4e3b5b28,0 4px 18px #fff inset;padding:38px 24px}
+.scratch-card:before{inset:10px;border:1px solid #c5a66e}
+.scratch-area{width:min(270px,78vw);height:116px;border-radius:3px;overflow:hidden;background:linear-gradient(135deg,#f5e8c4,#c4a66c 48%,#f3e4bd);box-shadow:inset 0 2px 10px #765d3830,0 8px 22px #66516e18}
+.scratch-under{font-size:1.45rem;letter-spacing:.16em;background:radial-gradient(circle at center,#fffdf8,#f0e7f1);color:#695272}
+#scratchCanvas{width:100%;height:100%;touch-action:none;cursor:crosshair}
+.scratch-card h2{font-size:2.8rem}
+.envelope{width:min(430px,88vw);height:285px;margin:34px auto 24px;filter:drop-shadow(0 28px 30px #4a365a35);cursor:default}
+.env-back{background:linear-gradient(145deg,#fdf9f4,#e7dbea);border:1px solid #c8ad78}
+.env-paper{left:7%;right:7%;top:7%;height:86%;background:linear-gradient(145deg,#fffefa,#f8f2f6);border:1px solid #d9c79f;box-shadow:0 2px 15px #5b456d12;z-index:1}
+.env-paper:before{content:"";position:absolute;inset:9px;border:1px solid #e7d8b7;pointer-events:none}
+.env-paper b{font-size:2.35rem;letter-spacing:.03em}
+.env-flap{background:linear-gradient(145deg,#d9c9e0,#aa92b8 75%,#8d759c);filter:drop-shadow(0 2px 3px #65516f22);z-index:4}
+.env-front{background:linear-gradient(135deg,#eee5f0,#c9b7d9 60%,#b29cbe);border:1px solid #c2a66f;z-index:3}
+.seal{z-index:6;top:51%;width:88px;height:88px;border:0;border-radius:50%;cursor:pointer;background:radial-gradient(circle at 32% 25%,#f7e7bf 0,#d9bb7e 24%,#a77e45 58%,#765331 100%);box-shadow:inset 0 2px 5px #fff9,inset 0 -5px 10px #4d301d88,0 7px 16px #4b344c55;outline:1px solid #f2dfb1;outline-offset:4px;color:#fff7e6;font:500 1.55rem 'Cormorant Garamond';text-shadow:0 2px 3px #60401f;transition:transform .35s,opacity .35s,box-shadow .35s}
+.seal:before{content:"";position:absolute;inset:9px;border:1px solid #fff0c8aa;border-radius:50%;box-shadow:inset 0 0 0 2px #8f673744}
+.seal:after{content:"✦";position:absolute;right:14px;top:12px;font-size:.55rem;color:#fff4d5}
+.seal:hover{transform:translate(-50%,-50%) scale(1.07);box-shadow:inset 0 2px 5px #fff9,inset 0 -5px 10px #4d301d88,0 10px 24px #4b344c66}
+.envelope.open .env-flap{transform:rotateX(180deg);z-index:1}
+.envelope.open .env-paper{transform:translateY(-118px);transition:transform 1.15s .35s}
+.envelope.open .seal{opacity:0;pointer-events:none;transform:translate(-50%,-50%) scale(.65)}
+.seal-hint{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:#8c7890}
+.music-toggle{border-color:#c5a66e;background:#fffcf5ed}
+@media(max-width:480px){.envelope{height:245px}.seal{width:76px;height:76px}.env-paper b{font-size:2rem}}
+
 </style>
 </head>
 <body>
@@ -29,7 +56,7 @@ section.content{padding:100px 24px;position:relative}.section-inner{max-width:10
  <div class="intro-wrap"><div class="brand">A SPECIAL DATE · A SPECIAL DU'A</div><div class="scratch-card"><div class="eyebrow">Please reveal our date</div><h2 class="serif">A day to remember</h2><div class="ornament">✧ ❧ ✧</div><div class="scratch-reveal">12 December 2027</div><div class="scratch-area" id="scratchArea"><div class="scratch-under">12 · 12 · 2027</div><canvas id="scratchCanvas" width="440" height="190"></canvas></div><div class="small-note">Gently scratch the gold foil with your finger or mouse</div></div><button class="ghost" id="skipScratch">Skip reveal</button></div>
 </div>
 <div class="screen hide" id="envelopeScreen">
- <div class="intro-wrap"><div class="brand">SEALED WITH LOVE</div><div class="envelope" id="envelope"><div class="env-back"></div><div class="env-paper"><div><div class="eyebrow">You are cordially invited</div><b>Zara &amp; Ayaan</b><div class="gold-line"></div><span class="eyebrow">Nikkah · 12.12.2027</span></div></div><div class="env-flap"></div><div class="env-front"></div><div class="seal">A&amp;Z</div></div><h2 class="serif" style="font-size:2.4rem;color:var(--plum)">An invitation from our families</h2><button class="primary" id="openInvite">Tap to open</button><div style="margin-top:14px"><button class="ghost" id="skipIntro">Skip intro</button></div></div>
+ <div class="intro-wrap"><div class="brand">HOORIQA STUDIO · SEALED WITH LOVE</div><div class="envelope" id="envelope"><div class="env-back"></div><div class="env-paper"><div><div class="eyebrow">A celebration of love & family</div><b>Zara <span style="color:var(--gold)">&amp;</span> Ayaan</b><div class="gold-line"></div><span class="eyebrow">Nikkah · 12 December 2027</span></div></div><div class="env-flap"></div><div class="env-front"></div><button class="seal" id="openSeal" type="button" aria-label="Tap the wax seal to open the invitation">A&amp;Z</button></div><h2 class="serif" style="font-size:2.5rem;color:var(--plum);margin:8px 0">A letter, sealed with duas</h2><div class="seal-hint">Tap the golden wax seal to open</div><div style="margin-top:22px"><button class="ghost" id="skipIntro">Skip intro</button></div></div>
 </div>
 <header><nav class="nav"><div class="logo">HOORIQA <span style="font-size:.7rem;letter-spacing:.25em">STUDIO</span></div><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button><div class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#couple">Couple</a><a href="#events">Events</a><a href="#venue">Venue</a><a href="#gallery">Gallery</a><a href="#rsvp">RSVP</a></div></nav></header>
 <main id="main">
@@ -50,44 +77,65 @@ section.content{padding:100px 24px;position:relative}.section-inner{max-width:10
 const $=id=>document.getElementById(id);
 function showScreen(id){['welcome','scratchScreen','envelopeScreen'].forEach(x=>$(x).classList.toggle('hide',x!==id))}
 
-// Original soft ambient wedding music, synthesized in-browser (no external track).
-let audioCtx=null,musicOn=false,musicTimer=null,noteIndex=0;
-const melody=[261.63,329.63,392.00,329.63,293.66,349.23,440.00,349.23];
-function playSoftNote(freq){
- if(!audioCtx||!musicOn)return;
- const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();
- osc.type='sine';osc.frequency.value=freq;
- gain.gain.setValueAtTime(0.0001,audioCtx.currentTime);
- gain.gain.exponentialRampToValueAtTime(0.026,audioCtx.currentTime+0.7);
- gain.gain.exponentialRampToValueAtTime(0.0001,audioCtx.currentTime+3.1);
- osc.connect(gain);gain.connect(audioCtx.destination);
- osc.start();osc.stop(audioCtx.currentTime+3.15);
+// Soft, slow ambient pad with warm layered chords; starts only after a visitor's tap.
+let audioCtx=null,musicOn=false,musicNodes=[],musicTimer=null,chordStep=0;
+const chords=[[261.63,329.63,392.00],[220.00,261.63,329.63],[174.61,220.00,261.63],[196.00,246.94,293.66]];
+function fadeVoice(freq,when,duration,volume){
+ const osc=audioCtx.createOscillator(),tone=audioCtx.createOscillator(),gain=audioCtx.createGain();
+ osc.type='sine';osc.frequency.setValueAtTime(freq,when);
+ tone.type='triangle';tone.frequency.setValueAtTime(freq*2,when);
+ const mix=audioCtx.createGain();mix.gain.value=.18;
+ osc.connect(gain);tone.connect(mix);mix.connect(gain);gain.connect(audioCtx.destination);
+ gain.gain.setValueAtTime(.0001,when);gain.gain.linearRampToValueAtTime(volume,when+2.8);gain.gain.setValueAtTime(volume,when+duration-2.5);gain.gain.linearRampToValueAtTime(.0001,when+duration);
+ osc.start(when);tone.start(when);osc.stop(when+duration+.1);tone.stop(when+duration+.1);musicNodes.push(osc,tone,gain,mix);
+}
+function layChord(){
+ if(!musicOn||!audioCtx)return;const now=audioCtx.currentTime,notes=chords[chordStep++%chords.length];
+ notes.forEach((n,i)=>fadeVoice(n,now+i*.22,10,i===0?.012:.008));
+ fadeVoice(notes[0]/2,now,10,.009);
 }
 async function toggleMusic(force){
  const want=typeof force==='boolean'?force:!musicOn;
  if(want){
-  const AC=window.AudioContext||window.webkitAudioContext;
-  if(!AC)return;
-  if(!audioCtx)audioCtx=new AC();
-  if(audioCtx.state==='suspended')await audioCtx.resume();
-  musicOn=true;playSoftNote(130.81);playSoftNote(melody[noteIndex++%melody.length]);
-  musicTimer=setInterval(()=>{playSoftNote(melody[noteIndex++%melody.length]);if(noteIndex%4===0)playSoftNote(130.81)},2300);
+  const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
+  if(!audioCtx)audioCtx=new AC();if(audioCtx.state==='suspended')await audioCtx.resume();
+  if(musicOn)return;musicOn=true;layChord();musicTimer=setInterval(layChord,7800);
  }else{
-  musicOn=false;if(musicTimer)clearInterval(musicTimer);
-  if(audioCtx&&audioCtx.state==='running')await audioCtx.suspend();
+  musicOn=false;if(musicTimer)clearInterval(musicTimer);if(audioCtx&&audioCtx.state==='running')await audioCtx.suspend();
  }
- $('musicLabel').textContent=musicOn?'SOUND ON':'SOUND OFF';
- $('musicToggle').setAttribute('aria-pressed',String(musicOn));
+ $('musicLabel').textContent=musicOn?'MUSIC ON':'MUSIC OFF';$('musicToggle').setAttribute('aria-pressed',String(musicOn));
 }
 $('musicToggle').addEventListener('click',()=>toggleMusic());
 $('begin').addEventListener('click',()=>{toggleMusic(true);showScreen('scratchScreen')});
 $('skipScratch').addEventListener('click',()=>showScreen('envelopeScreen'));
 $('skipIntro').addEventListener('click',()=>{['welcome','scratchScreen','envelopeScreen'].forEach(x=>$(x).classList.add('hide'));window.scrollTo({top:0,behavior:'smooth'})});
-const canvas=$('scratchCanvas'),ctx=canvas.getContext('2d');ctx.fillStyle='#c4a96f';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.fillStyle='#f3e7c9';ctx.font='600 24px Georgia';ctx.textAlign='center';ctx.fillText('SCRATCH TO REVEAL',220,105);ctx.globalCompositeOperation='destination-out';let scratching=false,cleared=false;
+const canvas=$('scratchCanvas'),ctx=canvas.getContext('2d',{willReadFrequently:true});
+function paintFoil(){
+ const g=ctx.createLinearGradient(0,0,canvas.width,canvas.height);g.addColorStop(0,'#f5e8c4');g.addColorStop(.28,'#c2a46b');g.addColorStop(.55,'#ead8a9');g.addColorStop(1,'#b18d55');ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,canvas.width,canvas.height);
+ ctx.fillStyle='#fff4d5';ctx.font='600 25px Georgia';ctx.textAlign='center';ctx.fillText('✧  SCRATCH TO REVEAL  ✧',canvas.width/2,canvas.height/2+8);
+ for(let x=12;x<canvas.width;x+=28){ctx.fillStyle='#fff8df33';ctx.fillRect(x,0,1,canvas.height)}
+ ctx.globalCompositeOperation='destination-out';
+}
+paintFoil();let scratching=false,cleared=false,lastPoint=null,lastCheck=0;
 function point(e){const r=canvas.getBoundingClientRect();return{x:(e.clientX-r.left)*canvas.width/r.width,y:(e.clientY-r.top)*canvas.height/r.height}}
-function scratch(e){if(!scratching||cleared)return;const p=point(e);ctx.beginPath();ctx.arc(p.x,p.y,27,0,Math.PI*2);ctx.fill();const data=ctx.getImageData(0,0,canvas.width,canvas.height).data;let transparent=0;for(let i=3;i<data.length;i+=4)if(data[i]===0)transparent++;if(transparent/(data.length/4)>.42){cleared=true;canvas.style.transition='opacity .7s';canvas.style.opacity='0';setTimeout(()=>showScreen('envelopeScreen'),850)}}
-canvas.addEventListener('pointerdown',e=>{scratching=true;canvas.setPointerCapture(e.pointerId);scratch(e)});canvas.addEventListener('pointermove',scratch);canvas.addEventListener('pointerup',()=>scratching=false);canvas.addEventListener('pointercancel',()=>scratching=false);
-$('openInvite').addEventListener('click',()=>{$('envelope').classList.add('open');$('openInvite').textContent='Opening your invitation…';setTimeout(()=>{['welcome','scratchScreen','envelopeScreen'].forEach(x=>$(x).classList.add('hide'));window.scrollTo({top:0,behavior:'smooth'})},1450)});
+function brush(p){
+ if(!lastPoint){lastPoint=p;ctx.beginPath();ctx.arc(p.x,p.y,30,0,Math.PI*2);ctx.fill();return}
+ const dx=p.x-lastPoint.x,dy=p.y-lastPoint.y,dist=Math.hypot(dx,dy),steps=Math.max(1,Math.ceil(dist/5));
+ ctx.lineWidth=60;ctx.lineCap='round';ctx.lineJoin='round';ctx.beginPath();ctx.moveTo(lastPoint.x,lastPoint.y);ctx.lineTo(p.x,p.y);ctx.stroke();
+ for(let i=1;i<steps;i++){const t=i/steps;ctx.beginPath();ctx.arc(lastPoint.x+dx*t,lastPoint.y+dy*t,30,0,Math.PI*2);ctx.fill()}
+ lastPoint=p;
+}
+function checkReveal(now){
+ if(now-lastCheck<180)return;lastCheck=now;
+ const data=ctx.getImageData(0,0,canvas.width,canvas.height).data;let transparent=0;
+ for(let i=3;i<data.length;i+=16)if(data[i]===0)transparent++;
+ if(transparent/(data.length/16)>.48&&!cleared){cleared=true;scratching=false;canvas.style.transition='opacity 1s ease';canvas.style.opacity='0';setTimeout(()=>showScreen('envelopeScreen'),1050)}
+}
+canvas.addEventListener('pointerdown',e=>{if(cleared)return;scratching=true;lastPoint=point(e);canvas.setPointerCapture(e.pointerId);brush(lastPoint)});
+canvas.addEventListener('pointermove',e=>{if(!scratching||cleared)return;const p=point(e);brush(p);checkReveal(performance.now())});
+function stopScratch(){scratching=false;lastPoint=null}canvas.addEventListener('pointerup',stopScratch);canvas.addEventListener('pointercancel',stopScratch);
+function openSealedInvite(){if($('envelope').classList.contains('open'))return;$('envelope').classList.add('open');$('openSeal').setAttribute('aria-label','Invitation opening');setTimeout(()=>{['welcome','scratchScreen','envelopeScreen'].forEach(x=>$(x).classList.add('hide'));window.scrollTo({top:0,behavior:'smooth'})},1900)}
+$('openSeal').addEventListener('click',openSealedInvite);
 $('menuBtn').addEventListener('click',()=>$('navlinks').classList.toggle('show'));document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>$('navlinks').classList.remove('show')));
 const target=new Date('2027-12-12T18:00:00+05:00').getTime();function tick(){let d=Math.max(0,target-Date.now());$('days').textContent=Math.floor(d/86400000);$('hours').textContent=Math.floor(d%86400000/3600000);$('minutes').textContent=Math.floor(d%3600000/60000);$('seconds').textContent=Math.floor(d%60000/1000)}tick();setInterval(tick,1000);
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
